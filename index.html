@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<Head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=stylesheet type=text/css href="CS-Tank.css">
+<script src="JS-Tank.js"></script>
+
+</Head>
+<body>
+
+<div Id="D1">TANK CALCULATION</div>
+<div id="BX">
+<div id="BX1"> BX1
+
+<div id="D2">ROUND TANK - D2
+<br><label for="B1">DIA:</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B1" onchange="TankRound()">
+<br><label for="B2">HIEGHT:</label><input type="number"  maxlength="3" width="10px" size="3" value=100 id="B2" onchange="TankRound()">
+<br><label for="B3">GRAVITY:</label><input type="number"  maxlength="3" width="10px" size="3" value=0.9 id="B3" onchange="TankRound()">
+</div>
+
+<div id="D3">BOX/RACTANGLE TANK - D3
+<br><label for="B4">WIDTH :</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B4" onchange="Tank3d()">
+<br><label for="B5">LENGHT:</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B5" onchange="Tank3d()">
+<br><label for="B6">HIEGHT:</label><input type="number" maxlength="3" width="10px" size="3" value=255 id="B6" onchange="Tank3d()">
+<br><label for="B7">GRAVITY:</label><input type="number" maxlength="3" width="10px" size="3" value=0.9 id="B7" onchange="Tank3d()">
+</div>
+
+</div>
+<div id="BX2">BX2
+<div id="D4">RESULT <br>
+              Liter Per Inch : <output id="R1"></output>
+              <br>
+              Weight Per Inch : <output id="R2"></output>
+              <br>
+              Total Capacity/Weight Tank : <output id="R3"></output>
+</div>
+<div id="D5">OBJECT</div>
+ Ratio : <output id="R4"></output>
+<canvas id="O1">
+</canvas>
+</div>
+</div>
+</body>
+</html>
